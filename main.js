@@ -1,8 +1,17 @@
-//document.querySelector('.tecla_pom')
+function tocaSomPom() {
+    document.querySelector('#som_tecla_pom').play();
+}
 
-let botao = document.querySelector('.tecla_pom')
+function tocaSomClap() {
+    document.querySelector('#som_tecla_clap').play();
+}
 
-botao.addEventListener('click', function() {
-    alert('Fui clicado!');
-});
 
+document.querySelector('.tecla_pom').onclick = tocaSomPom;
+
+document.querySelector('.tecla_clap').onclick = tocaSomClap;
+
+
+
+
+//<audio src="sounds/keyq.wav" id="som_tecla_pom"></audio>
